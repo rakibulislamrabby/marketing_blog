@@ -320,3 +320,252 @@ body {
 .prose-content ul li {
   margin-bottom: 0.5rem;
 }
+
+/* ── Adsterra Ad Placements ── */
+.ad-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.ad-section {
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(250, 245, 255, 0.5);
+  border: 1px dashed rgba(168, 85, 247, 0.2);
+  text-align: center;
+}
+
+.ad-section--sticky-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid #e9d5ff;
+  padding: 0.5rem;
+}
+
+.ad-label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(74, 64, 99, 0.45);
+  margin-bottom: 0.75rem;
+}
+
+.ad-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ad-row--single {
+  flex-direction: column;
+}
+
+.ad-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.ad-slot-inner {
+  display: inline-block;
+}
+
+.ad-slot--mobile {
+  display: none;
+}
+
+.ad-slot--desktop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .ad-slot--mobile {
+    display: flex;
+  }
+
+  .ad-slot[data-ad="banner-728"] {
+    display: none;
+  }
+
+  body.has-sticky-ad {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ad-slot--desktop {
+    display: flex;
+  }
+}
+
+.ad-smartlink-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #f472b6 0%, #a855f7 50%, #9333ea 100%);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.ad-smartlink-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(168, 85, 247, 0.3);
+}
+
+.ad-smartlink-badge {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.ad-smartlink-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.ad-smartlink-cta {
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Home page — full-screen click ad overlay */
+.home-ad-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(26, 21, 40, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.home-ad-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.home-ad-overlay__panel {
+  position: relative;
+  width: 100%;
+  max-width: 48rem;
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #fff5f8 0%, #ffffff 40%, #faf5ff 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  box-shadow: 0 24px 80px rgba(26, 21, 40, 0.35);
+  text-align: center;
+}
+
+.home-ad-overlay__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(168, 85, 247, 0.12);
+  color: #9333ea;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.home-ad-overlay__close:hover {
+  background: rgba(168, 85, 247, 0.22);
+}
+
+.home-ad-overlay__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1528;
+  margin-bottom: 1.25rem;
+}
+
+.home-ad-overlay__slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  min-height: 250px;
+}
+
+.home-ad-overlay__slot--wide {
+  min-height: 90px;
+}
+
+.home-ad-overlay__smartlink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem auto;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #f472b6 0%, #a855f7 50%, #9333ea 100%);
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.35);
+  transition: transform 0.2s;
+}
+
+.home-ad-overlay__smartlink:hover {
+  transform: scale(1.03);
+}
+
+.home-ad-overlay__continue {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: #4a4063;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+body.home-ad-open {
+  overflow: hidden;
+}

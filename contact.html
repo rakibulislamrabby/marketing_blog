@@ -11,8 +11,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="css/custom.css" />
+  <!-- Adsterra Popunder -->
+  <script src="https://pl29658429.effectivecpmnetwork.com/83/86/c5/8386c5bee7d7680a5b7c2e8849fb3aad.js"></script>
 </head>
-<body class="bg-white">
+<body class="bg-white has-sticky-ad">
 
   <header class="fixed top-0 z-50 w-full" id="site-header">
     <nav class="glass mx-4 mt-4 rounded-2xl px-6 py-4 lg:mx-8">
@@ -47,6 +49,8 @@
       </div>
     </div>
   </header>
+
+  <div id="ad-container-top"></div>
 
   <main class="pt-32 pb-20 lg:pt-40">
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -138,6 +142,8 @@
       </div>
     </section>
 
+    <div id="ad-container-mid"></div>
+
     <!-- FAQ -->
     <section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
       <div class="mb-12 text-center animate-on-scroll">
@@ -197,6 +203,8 @@
         </div>
       </div>
     </section>
+
+    <div id="ad-container-bottom"></div>
   </main>
 
   <footer class="bg-ink-900 pt-16 pb-8">
@@ -205,6 +213,11 @@
     </div>
   </footer>
 
+  <div class="ad-section ad-section--sticky-mobile" aria-label="Advertisement">
+    <div class="ad-slot ad-slot--mobile" data-ad="banner-320"></div>
+  </div>
+
+  <script src="js/ads.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

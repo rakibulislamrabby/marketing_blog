@@ -16,8 +16,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="css/custom.css" />
+  <!-- Adsterra Popunder -->
+  <script src="https://pl29658429.effectivecpmnetwork.com/83/86/c5/8386c5bee7d7680a5b7c2e8849fb3aad.js"></script>
 </head>
-<body class="bg-white">
+<body class="bg-white has-sticky-ad" data-home-page="true">
 
   <!-- Navigation -->
   <header class="fixed top-0 z-50 w-full transition-all duration-300" id="site-header">
@@ -61,6 +63,8 @@
       </div>
     </div>
   </header>
+
+  <div id="ad-container-top"></div>
 
   <main>
     <!-- Hero -->
@@ -110,6 +114,8 @@
         </div>
       </div>
     </section>
+
+    <div data-ad-zone="inline"></div>
 
     <!-- Featured Posts -->
     <section class="py-20 lg:py-28">
@@ -167,6 +173,8 @@
       </div>
     </section>
 
+    <div id="ad-container-mid"></div>
+
     <!-- Categories -->
     <section class="bg-blush-50/50 py-20 lg:py-28">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -209,6 +217,8 @@
         </div>
       </div>
     </section>
+
+    <div data-ad-zone="inline"></div>
 
     <!-- About Author -->
     <section class="py-20 lg:py-28">
@@ -269,6 +279,8 @@
         </div>
       </div>
     </section>
+
+    <div data-ad-zone="inline"></div>
 
     <!-- Instagram Gallery -->
     <section class="py-20 lg:py-28">
@@ -351,6 +363,8 @@
       </div>
     </section>
 
+    <div id="ad-container-bottom"></div>
+
     <!-- CTA -->
     <section class="pb-20 lg:pb-28">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -412,6 +426,12 @@
     </div>
   </footer>
 
+  <div class="ad-section ad-section--sticky-mobile" aria-label="Advertisement">
+    <div class="ad-slot ad-slot--mobile" data-ad="banner-320"></div>
+  </div>
+
+  <script src="js/ads.js"></script>
+  <script src="js/home-click-ad.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
