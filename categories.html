@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore BloomFit wellness categories: weight loss, home workouts, healthy recipes, women's health, motivation, and mental wellness." />
+  <title>Categories | BloomFit Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-white">
+
+  <header class="fixed top-0 z-50 w-full" id="site-header">
+    <nav class="glass mx-4 mt-4 rounded-2xl px-6 py-4 lg:mx-8">
+      <div class="mx-auto flex max-w-7xl items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-cta-gradient text-sm font-bold text-white">B</span>
+          <span class="font-display text-xl font-bold text-ink-900">Bloom<span class="text-gradient">Fit</span></span>
+        </a>
+        <div class="hidden items-center gap-8 lg:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="categories.html" class="nav-link active">Categories</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="hidden lg:block"><a href="blog.html" class="btn-primary text-sm">Start Reading</a></div>
+        <button id="mobile-menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-xl bg-plum-50 lg:hidden" aria-label="Open menu">
+          <svg class="h-5 w-5 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="fixed inset-0 z-40 translate-x-full bg-white/95 backdrop-blur-xl transition-transform duration-300 lg:hidden">
+      <div class="flex h-full flex-col items-center justify-center gap-8">
+        <button id="mobile-menu-close" class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-xl bg-plum-50" aria-label="Close menu">
+          <svg class="h-5 w-5 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="index.html" class="text-2xl font-display font-bold text-ink-800">Home</a>
+        <a href="blog.html" class="text-2xl font-display font-bold text-ink-800">Blog</a>
+        <a href="categories.html" class="text-2xl font-display font-bold text-plum-600">Categories</a>
+        <a href="about.html" class="text-2xl font-display font-bold text-ink-800">About</a>
+        <a href="contact.html" class="text-2xl font-display font-bold text-ink-800">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20 lg:pt-40">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 text-center animate-on-scroll">
+        <span class="section-label">Browse by Topic</span>
+        <h1 class="section-title">Wellness <span class="text-gradient">Categories</span></h1>
+        <p class="mx-auto mt-4 max-w-2xl text-ink-600">Find exactly what you need—from workout plans to nourishing recipes and mindset shifts.</p>
+      </div>
+
+      <div class="space-y-16">
+        <!-- Weight Loss -->
+        <div id="weight-loss" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-blush-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div>
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blush-400 to-blush-600 text-2xl">⚖️</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Weight Loss</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Science-backed strategies for sustainable, healthy weight management. No crash diets—just real results that last.</p>
+              <a href="blog.html?category=weight-loss" class="btn-primary text-sm">Browse Articles →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Weight loss" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Healthy eating" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Home Workouts -->
+        <div id="home-workouts" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-plum-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div class="lg:order-2">
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-plum-400 to-plum-600 text-2xl">🏠</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Home Workouts</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Effective exercises you can do anywhere—no gym membership required. From HIIT to yoga, we've got you covered.</p>
+              <a href="post.html?slug=10-minute-morning-workout" class="btn-primary text-sm">Start a Workout →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4 lg:order-1">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80" alt="Home workout" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80" alt="Exercise" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Healthy Recipes -->
+        <div id="healthy-recipes" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-green-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div>
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 text-2xl">🥗</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Healthy Recipes</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Delicious, nutritious meals that support your wellness goals. Easy prep, big flavor, zero guilt.</p>
+              <a href="post.html?slug=green-smoothie-bowl-recipe" class="btn-primary text-sm">Try a Recipe →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Healthy food" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Smoothie bowl" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Women's Health -->
+        <div id="womens-health" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-purple-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div class="lg:order-2">
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-400 to-plum-600 text-2xl">💜</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Women's Health</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Expert insights on hormones, cycle syncing, and women's wellness. Understand your body, optimize your results.</p>
+              <a href="post.html?slug=hormone-health-basics" class="btn-primary text-sm">Learn More →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4 lg:order-1">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Women's health" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Wellness" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Motivation -->
+        <div id="motivation" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-amber-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div>
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-2xl">✨</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Motivation</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Inspiration and mindset tips to keep you moving forward. Because the hardest muscle to train is your mind.</p>
+              <a href="post.html?slug=daily-motivation-rituals" class="btn-primary text-sm">Get Inspired →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80" alt="Motivation" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Fitness motivation" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Mental Wellness -->
+        <div id="mental-wellness" class="scroll-mt-32 animate-on-scroll">
+          <div class="grid items-center gap-8 rounded-3xl bg-gradient-to-br from-sky-50 to-white p-8 lg:grid-cols-2 lg:p-12">
+            <div class="lg:order-2">
+              <span class="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-blue-500 text-2xl">🧘</span>
+              <h2 class="mb-4 font-display text-3xl font-bold text-ink-900">Mental Wellness</h2>
+              <p class="mb-6 text-ink-600 leading-relaxed">Mindfulness, stress relief, and emotional wellbeing practices. Because true wellness starts in the mind.</p>
+              <a href="post.html?slug=mindful-movement-anxiety" class="btn-primary text-sm">Find Peace →</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4 lg:order-1">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Mental wellness" loading="lazy" class="rounded-2xl object-cover shadow-card" />
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&q=80" alt="Mindfulness" loading="lazy" class="mt-8 rounded-2xl object-cover shadow-card" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink-900 pt-16 pb-8">
+    <div class="mx-auto max-w-7xl px-4 text-center text-sm text-white/40">
+      <p>&copy; 2026 BloomFit Wellness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

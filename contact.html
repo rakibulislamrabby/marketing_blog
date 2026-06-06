@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact BloomFit Wellness. Send a message, find us on social media, or browse our FAQ for common questions." />
+  <title>Contact | BloomFit Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-white">
+
+  <header class="fixed top-0 z-50 w-full" id="site-header">
+    <nav class="glass mx-4 mt-4 rounded-2xl px-6 py-4 lg:mx-8">
+      <div class="mx-auto flex max-w-7xl items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-cta-gradient text-sm font-bold text-white">B</span>
+          <span class="font-display text-xl font-bold text-ink-900">Bloom<span class="text-gradient">Fit</span></span>
+        </a>
+        <div class="hidden items-center gap-8 lg:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+        <div class="hidden lg:block"><a href="blog.html" class="btn-primary text-sm">Start Reading</a></div>
+        <button id="mobile-menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-xl bg-plum-50 lg:hidden" aria-label="Open menu">
+          <svg class="h-5 w-5 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="fixed inset-0 z-40 translate-x-full bg-white/95 backdrop-blur-xl transition-transform duration-300 lg:hidden">
+      <div class="flex h-full flex-col items-center justify-center gap-8">
+        <button id="mobile-menu-close" class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-xl bg-plum-50" aria-label="Close menu">
+          <svg class="h-5 w-5 text-plum-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="index.html" class="text-2xl font-display font-bold text-ink-800">Home</a>
+        <a href="blog.html" class="text-2xl font-display font-bold text-ink-800">Blog</a>
+        <a href="categories.html" class="text-2xl font-display font-bold text-ink-800">Categories</a>
+        <a href="about.html" class="text-2xl font-display font-bold text-ink-800">About</a>
+        <a href="contact.html" class="text-2xl font-display font-bold text-plum-600">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20 lg:pt-40">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 text-center animate-on-scroll">
+        <span class="section-label">Get in Touch</span>
+        <h1 class="section-title">Let's <span class="text-gradient">Connect</span></h1>
+        <p class="mx-auto mt-4 max-w-2xl text-ink-600">Have a question, collaboration idea, or just want to say hi? I'd love to hear from you.</p>
+      </div>
+
+      <div class="grid gap-12 lg:grid-cols-5">
+        <!-- Contact Form -->
+        <div class="lg:col-span-3 animate-on-scroll">
+          <div class="glass rounded-3xl p-8 lg:p-10">
+            <h2 class="mb-6 font-display text-2xl font-bold text-ink-900">Send a Message</h2>
+            <form id="contact-form" class="space-y-5">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-medium text-ink-700">Full Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name" class="input-field" />
+                </div>
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-medium text-ink-700">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com" class="input-field" />
+                </div>
+              </div>
+              <div>
+                <label for="subject" class="mb-2 block text-sm font-medium text-ink-700">Subject</label>
+                <select id="subject" name="subject" class="input-field">
+                  <option>General Inquiry</option>
+                  <option>Collaboration</option>
+                  <option>Coaching Question</option>
+                  <option>Feedback</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-sm font-medium text-ink-700">Message</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Tell me what's on your mind..." class="input-field resize-none"></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full sm:w-auto">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6 lg:col-span-2 animate-on-scroll stagger-2">
+          <div class="glass rounded-2xl p-6">
+            <h3 class="mb-4 font-display text-lg font-bold text-ink-900">Contact Info</h3>
+            <ul class="space-y-4 text-sm text-ink-600">
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 text-plum-500">✉️</span>
+                <span>hello@bloomfitwellness.com</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 text-plum-500">📍</span>
+                <span>Los Angeles, California</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 text-plum-500">⏰</span>
+                <span>Response within 24 hours</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <h3 class="mb-4 font-display text-lg font-bold text-ink-900">Follow Along</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="flex items-center gap-2 rounded-xl bg-plum-50 px-4 py-3 text-sm font-medium text-plum-600 transition hover:bg-plum-100">
+                <span>📷</span> Instagram
+              </a>
+              <a href="#" class="flex items-center gap-2 rounded-xl bg-plum-50 px-4 py-3 text-sm font-medium text-plum-600 transition hover:bg-plum-100">
+                <span>📌</span> Pinterest
+              </a>
+              <a href="#" class="flex items-center gap-2 rounded-xl bg-plum-50 px-4 py-3 text-sm font-medium text-plum-600 transition hover:bg-plum-100">
+                <span>▶️</span> YouTube
+              </a>
+              <a href="#" class="flex items-center gap-2 rounded-xl bg-plum-50 px-4 py-3 text-sm font-medium text-plum-600 transition hover:bg-plum-100">
+                <span>🎵</span> TikTok
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-cta-gradient p-6 text-white">
+            <h3 class="mb-2 font-display text-lg font-bold">Join the Newsletter</h3>
+            <p class="mb-4 text-sm text-white/80">Weekly wellness tips delivered to your inbox.</p>
+            <a href="index.html#newsletter" class="inline-block rounded-full bg-white px-5 py-2 text-sm font-semibold text-plum-600 transition hover:bg-blush-50">Subscribe Free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+      <div class="mb-12 text-center animate-on-scroll">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Common <span class="text-gradient">Questions</span></h2>
+      </div>
+
+      <div class="space-y-4 animate-on-scroll">
+        <div class="faq-item glass rounded-2xl">
+          <button class="faq-question flex w-full items-center justify-between p-6 text-left font-semibold text-ink-900">
+            Do you offer personal coaching?
+            <span class="ml-4 text-plum-500 transition-transform faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-ink-600 leading-relaxed">
+            Yes! I offer 1-on-1 wellness coaching packages. Send me a message with "Coaching" as the subject and I'll share details about availability and pricing.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl">
+          <button class="faq-question flex w-full items-center justify-between p-6 text-left font-semibold text-ink-900">
+            Are your workout plans suitable for beginners?
+            <span class="ml-4 text-plum-500 transition-transform faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-ink-600 leading-relaxed">
+            Absolutely! Every workout on BloomFit includes modifications for all fitness levels. Start where you are—there's no judgment here, only encouragement.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl">
+          <button class="faq-question flex w-full items-center justify-between p-6 text-left font-semibold text-ink-900">
+            Can I republish your recipes or workouts?
+            <span class="ml-4 text-plum-500 transition-transform faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-ink-600 leading-relaxed">
+            You're welcome to share links to our articles on social media! For republishing content on other websites, please reach out for permission first.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl">
+          <button class="faq-question flex w-full items-center justify-between p-6 text-left font-semibold text-ink-900">
+            How often do you publish new content?
+            <span class="ml-4 text-plum-500 transition-transform faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-ink-600 leading-relaxed">
+            I publish 2-3 new articles every week, plus daily inspiration on Instagram. Subscribe to the newsletter so you never miss a post!
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl">
+          <button class="faq-question flex w-full items-center justify-between p-6 text-left font-semibold text-ink-900">
+            Do you accept guest posts or collaborations?
+            <span class="ml-4 text-plum-500 transition-transform faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-ink-600 leading-relaxed">
+            I'm always open to collaborating with brands and experts aligned with our mission. Select "Collaboration" in the contact form and tell me about your idea!
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink-900 pt-16 pb-8">
+    <div class="mx-auto max-w-7xl px-4 text-center text-sm text-white/40">
+      <p>&copy; 2026 BloomFit Wellness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
